@@ -15,7 +15,7 @@ export const Hero = () => {
         </a>
       </div>
       <img
-        src="assets/hero/heroImage.png"
+        src="assets/hero/Freepik.png"
         alt="Iamge of Me"
         className={styles.heroImg}
       />
