@@ -22,7 +22,7 @@ export const About = () => {
             <img src="assets/about/serverIcon.png" alt="Server_Icon" />
             <div className={styles.aboutItemText}>
               <h3>Backend Developer</h3>
-              <p>I have experience developing fast and optimized and APIs</p>
+              <p>I have experience developing fast and optimized APIs</p>
             </div>
           </li>
           <li className={styles.aboutItem}>
