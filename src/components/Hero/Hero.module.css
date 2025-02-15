@@ -17,6 +17,8 @@
   align-items: flex-start;
   color: var(--color-text);
   z-index: 1;
+  /* text-align: justify;
+  text-justify: inter-word; */
 }
 
 .title {
@@ -107,5 +109,8 @@
     }
     .content{
         align-items: center;
+    }
+    .title {
+      font-size: 46px;
     }
 }
