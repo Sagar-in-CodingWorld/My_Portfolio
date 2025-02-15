@@ -5,7 +5,8 @@ import {Hero} from './components/Hero/Hero.jsx';
 import { About } from './components/About/About.jsx';
 import {Experience} from './components/Experience/Experience.jsx';
 import {Projects} from './components/Project/Projects.jsx';
-
+import {Contact} from './components/Contact/Contact.jsx';
+                                                              
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +18,7 @@ function App() {
         <About/>
         <Experience/>
         <Projects/>
+        <Contact/>
 
       </div>
 
