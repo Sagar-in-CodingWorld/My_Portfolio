@@ -4,24 +4,28 @@ import styles from "./ProjectCard.module.css";
 
 //Using Props data fetching from parent function
 export const ProjectCard = ({ project, id }) => {
-  // console.log()
+  
+  // destructuring the Project Array
+  const { imageSrc, title, description, skills, demo, source } = project;
   return (
     <div key={id} className={styles.container}>
-      <img
-        src={project.imageSrc}
-        alt={`Image of ${project.title}`}
-        className={styles.image}
-      />
-      <h3 className={styles.title}>{project.title}</h3>
-      <p className={styles.description}>{project.description}</p>
+      <img src={imageSrc} alt={`Image of ${title}`} className={styles.image} />
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.description}>{description}</p>
       <ul className={styles.skills}>
-        {project.skills.map((skill, id) => {
-          <li  className={styles.skill} key={id}>{skill}</li>;
+        {skills.map((skilled, id) => {
+          <li className={styles.skill} key={id}>
+            {skilled}
+          </li>;
         })}
       </ul>
       <div className={styles.links}>
-        <a href={project.demo} className={styles.link}>Demo</a>
-        <a href={project.source} className={styles.link}>Source</a>
+        <a href={demo} className={styles.link}>
+          Demo
+        </a>
+        <a href={source} className={styles.link}>
+          Source
+        </a>
       </div>
     </div>
   );
